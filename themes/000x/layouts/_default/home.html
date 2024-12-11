@@ -1,0 +1,65 @@
+{{ define "main" }}
+<!-- {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }} -->
+<div class="container">
+  <div class="hero">
+    <span>hey there! <span class="fa fa-info-circle"></span></span>
+    <h1>Tech Trends and Innovations Blog</h1>
+
+    <p>
+      Welcome to your go-to source for all things tech! Our blog covers the
+      latest trends, innovations, and breakthroughs in the technology world.
+      From AI advancements and cutting-edge gadgets to insightful reviews and
+      tutorials, we bring you engaging and informative content. Whether you're a
+      tech enthusiast or just curious about the future of technology, our blog
+      provides expert insights and up-to-date information to keep you in the
+      loop. Explore, learn, and stay ahead with us!
+    </p>
+    <div class="midea-cat">
+      <ul class="socials-nav">
+        <li class="socials-nav-item">
+          <a href="#"><span class="fa fa-twitter"></span></a>
+        </li>
+        <li class="socials-nav-item">
+          <a href="#"><span class="fa fa-facebook"></span></a>
+        </li>
+        <li class="socials-nav-item">
+          <a href="#"><span class="fa fa-github"></span></a>
+        </li>
+
+        <li class="socials-nav-item">
+          <a href="#"><span class="fa fa-instagram"></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="posts-home">
+    <span>some posts <span class="fa fa-info-circle"></span></span>
+    <h1 class=" ">Tody Some Thrending topics</h1>
+    <div class="items">
+      {{ range site.RegularPages | first 3 }}
+      <div class="card" onclick="window.location.href='{{ .RelPermalink }}'">
+        <img class="card-img" src="{{ .Params.img | relURL }}" alt="" />
+        <h3 class="card-title">{{ .LinkTitle }}</h3>
+        <p class="card-text">{{ .Summary | truncate 72 }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="container">
+    <div class="explore">
+      <span>Explore more<span class="fa fa-info-circle"></span></span>
+      <h1 class="explore-title">Explore more topics</h1>
+      <p>Stay ahead in the world of technology with our insightful articles, latest trends, and in-depth tutorials. Dive into a wide range of topics curated just for you.</p>
+      <button class="cta-button"
+        onclick="window.location.href='/posts'"
+      >Read More</button>
+    </div>
+  </div>
+  
+{{ end }}
