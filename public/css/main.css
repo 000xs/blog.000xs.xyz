@@ -16,6 +16,27 @@
   list-style: none;
   text-decoration: none;
 }
+article p {
+  padding: 12px 0px; /* Add space between paragraphs */
+}
+
+article pre {
+  white-space: pre-wrap; /* Preserve formatting in <pre> */
+}
+article li {
+  padding: 8px 0px;
+}
+article hr {
+  margin: 24px 0px;
+}
+article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 16px 0px;
+}
 a {
   text-decoration: none;
   color: #f2f2f2;
@@ -26,20 +47,17 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* font-variation-settings: "wdth" 100; */
+
   background-color: #f2f2f2;
 }
 
 .navbar {
-  
   background-color: #495757;
   display: flex;
   flex-direction: column;
   justify-content: start;
   padding: 12px 124px;
-  
-  /* justify-content: space-between;
-  */
+
   align-items: start;
   color: #f2f2f2;
 }
@@ -48,7 +66,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
   color: #f2f2f2;
 }
@@ -83,7 +101,6 @@ body {
 }
 
 .container {
-  
   padding: 24px 124px;
 }
 
@@ -204,6 +221,19 @@ body {
   font-size: 16px;
   background: #282f2f;
   color: #f2f2f2;
+  border-radius: 6px;
+  border: #1c2121 solid 1px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.explore .cta-input {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #f2f2f2;
+  color: #1c2121;
   border-radius: 6px;
   border: #1c2121 solid 1px;
 }
@@ -357,11 +387,17 @@ body {
   align-items: start;
   margin-left: 32px;
 }
+.list .list-item .right h2 {
+  text-align: start;
+  padding: 0px;
+  margin: 0px;
+}
 .list .list-item .right h2 a {
   font-size: 24px;
   font-weight: 500;
   color: #282f2f;
-  padding: 6px 0px;
+  padding: 12px 0px;
+  text-align: start;
 }
 .list .list-item .author {
   display: flex;
@@ -441,8 +477,16 @@ footer {
     width: 120px;
     height: 120px;
   }
+
   .list .list-item .right h2 a {
+    text-align: start;
     font-size: 16px;
+    line-height: 18px;
+  }
+  .list .list-item .right h2   {
+    text-align: start;
+    font-size: 16px;
+    line-height: 20px;
   }
   .list .list-item .right .list-summary p {
     font-size: 12px;
@@ -465,23 +509,39 @@ footer {
   }
   /* //code single page post  */
   .post-data {
-    
     flex-direction: column;
     align-items: start;
     justify-content: start;
 
     padding: 32px 0px;
   }
-  .post-data .right{
+  .post-data .right {
     margin: 0px;
     padding: 12px 0px;
   }
-  .post-img{
+  .post-img {
     width: 320px;
     height: 320px;
   }
-  .post-content{
+  .post-content {
     padding: 0px 0px;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .explore .cta-input {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #f2f2f2;
+    color: #1c2121;
+    border-radius: 6px;
+    border: #1c2121 solid 1px;
+  }
+  .explore .cta-button:hover {
+    background: #f2f2f2;
+    color: #282f2f;
   }
 }
 

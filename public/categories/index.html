@@ -14,10 +14,26 @@
 </head>
 <body>
   <header>
-    
+     
 <nav class="navbar">
-  <h1 class="logo">000X</h1>
-  <ul>
+  <div class="nav-items">
+    <h1 class="logo">000X</h1>
+    <ul class="desktop-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="">About me</a></li>
+      <li><a href="">Contact me</a></li>
+      <div>
+        <button>Login</button>
+      </div>
+    </ul>
+
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-close"></i> 
+       
+  </div>
+
+  <ul class="mobile-nav">
     <li><a href="/">Home</a></li>
     <li><a href="/posts">Posts</a></li>
     <li><a href="">About me</a></li>
@@ -26,9 +42,6 @@
       <button>Login</button>
     </div>
   </ul>
-  <span 
-  onclick="OpenNav()"
-  class="material-symbols-outlined"> menu </span>
 </nav>
 
   </header>
@@ -55,5 +68,6 @@
 </div>
 
   </footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>

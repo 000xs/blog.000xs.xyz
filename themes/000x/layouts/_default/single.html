@@ -11,11 +11,11 @@
       </div>
       <div class="author">
         <img
-          src="https://images-ext-1.discordapp.net/external/zqldD3d_frLWeonnSjZ1w5A8kDt2yq4VxVlPHB__MGI/https/cdn.discordapp.com/avatars/841173931146346516/74c7829458dff8c563e5dd160e9899ba.png?format=webp&quality=lossless"
+          src="{{ .Params.author_img | relURL }}"
           alt=""
         />
         <div>
-          <p>000xs</p>
+          <p>{{ .Params.author }}</p>
           <p class="add-date">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00"
             }} {{ $dateHuman := .Date | time.Format ":date_long" }}
@@ -24,11 +24,14 @@
         </div>
       </div>
       <div class="post-summary">
-        <p>{{ .Summary | truncate 492 }}</p>
+        <p>{{ .Params.description | truncate 450 }}</p>
       </div>
     </div>
   </div>
-  <div class="post-content">{{ .Content }}</div>
+  <article class="post-content">
+    {{ .Content }}
+  </article>
+  <!-- <div class="post-content">{{ .Content }}</div> -->
 </div>
 
 {{ end }}

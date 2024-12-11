@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "925e2fe891ed9954",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4ca8a2395394168",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "648992076f5c78c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "01da2e1bf5903502",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Beginner’s Guide to Choosing Your First Programming Language"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c3173af9d67ccb2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "662f9a780a4c6c3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6480de1cb7b92b4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a7038f416473351a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d8dbb8aff9f94106",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "45910d08a944e3ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "692b7a85e0602fe8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fdd25188174f7ed",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for The Beginner’s Guide to Choosing Your First Programming Language"
+            }
+          },
+          {
+            "id": "5b6aedbc049c3f72",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from The Beginner’s Guide to Choosing Your First Programming Language"
+            }
+          },
+          {
+            "id": "4f74545123eeed34",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "967887d18ef4825f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of The Beginner’s Guide to Choosing Your First Programming Language"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "01da2e1bf5903502",
+  "lastOpenFiles": [
+    "_index.md",
+    "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.md",
+    "The Beginner’s Guide to Choosing Your First Programming Language/The Beginner’s Guide to Choosing Your First Programming Language.webp",
+    "The Beginner’s Guide to Choosing Your First Programming Language"
+  ]
+}

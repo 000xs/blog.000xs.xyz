@@ -14,14 +14,14 @@
             <img src="{{ .Params.img | relURL }}" alt="">
           </div>
           <div class="right">
-            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle | truncate 48 }}</a></h2>
             <!-- //tags  -->
             <div class="list-summary">{{ .Summary | truncate 72 }}</div>
 
             <div class="author">
-              <img src="https://images-ext-1.discordapp.net/external/zqldD3d_frLWeonnSjZ1w5A8kDt2yq4VxVlPHB__MGI/https/cdn.discordapp.com/avatars/841173931146346516/74c7829458dff8c563e5dd160e9899ba.png?format=webp&quality=lossless" alt="">
+              <img src="{{ .Params.author_img | relURL }}" alt="">
               <div>
-                <p class="author-name">000xs</p>
+                <div  class="author-name">{{ .Params.author }}</div>
                 <p class="add-date">
                   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
                   {{ $dateHuman := .Date | time.Format ":date_long" }}
