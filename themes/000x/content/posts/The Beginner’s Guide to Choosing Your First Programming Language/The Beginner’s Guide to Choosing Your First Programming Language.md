@@ -6,7 +6,7 @@ date = 2023-01-01T08:30:00-07:00
 draft = false
 author='000x'
 author_img='https://images-ext-1.discordapp.net/external/zqldD3d_frLWeonnSjZ1w5A8kDt2yq4VxVlPHB__MGI/https/cdn.discordapp.com/avatars/841173931146346516/74c7829458dff8c563e5dd160e9899ba.png?format=webp&quality=lossless'
- tags  =['code','tech','beginer-guide]
+ tags  =['code','tech','beginer-guide']
 +++
 
 Choosing your first programming language can feel like a daunting task. With so many languages available, it’s hard to know where to start. However, the right language for you depends on your goals, interests, and the type of projects you want to work on. In this guide, we’ll explore how to pick the best programming language for beginners and set you on the path to becoming a successful programmer.
