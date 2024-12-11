@@ -1,13 +1,13 @@
 name = 'blog 000x'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
+licenselink = 'https://github.com/000xs/blog.000xs.xyz/LICENSE'
 description = 'Theme description'
 
 # The home page of the theme, where the source can be found
 homepage = 'https://github.com/000xs/blog.000xs.xyz'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://blog.000xs.xyz/'
 
 # Taxonomy terms
 tags = ['blog', 'personal']
