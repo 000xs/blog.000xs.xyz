@@ -1,5 +1,48 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+{{- $title := .Title }} {{- $description := .Params.description | default
+.Summary | default "A great website powered by Hugo" }} {{- $canonical :=
+.Permalink }} {{- $siteName := .Site.Title }} {{- if .IsHome }} {{ $title =
+printf "%s - %s" $siteName "Welcome" }} {{ $canonical = .Site.BaseURL }} {{-
+else if .IsPage }} {{ $title = printf "%s | %s" .Title $siteName }} {{- else if
+.IsSection }} {{ $title = printf "Posts in %s | %s" .Title $siteName }} {{- end
+}}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}" />
+<link rel="canonical" href="{{ $canonical }}" />
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:url" content="{{ $canonical }}" />
+<meta
+  property="og:type"
+  content="{{ if .IsHome }}website{{ else }}article{{ end }}"
+/>
+<meta property="og:image" content="{{ .Params.image | default
+"default-image.jpg" | absURL }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:image" content="{{ .Params.image | default
+"default-image.jpg" | absURL }}">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ if .IsHome }}WebSite{{ else }}Article{{ end }}",
+    "name": "{{ $title }}",
+    "url": "{{ $canonical }}",
+    "description": "{{ $description }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ $siteName }}"
+    }
+  }
+</script>
+
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}

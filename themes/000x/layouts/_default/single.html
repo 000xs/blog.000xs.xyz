@@ -10,10 +10,7 @@
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
       </div>
       <div class="author">
-        <img
-          src="{{ .Params.author_img | relURL }}"
-          alt=""
-        />
+        <img src="{{ .Params.author_img | relURL }}" alt="" />
         <div>
           <p>{{ .Params.author }}</p>
           <p class="add-date">
@@ -28,10 +25,7 @@
       </div>
     </div>
   </div>
-  <article class="post-content">
-    {{ .Content }}
-  </article>
-  <!-- <div class="post-content">{{ .Content }}</div> -->
+  <article class="post-content">{{ .Content }}</article>
 </div>
 
 {{ end }}
