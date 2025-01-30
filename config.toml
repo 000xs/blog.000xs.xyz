@@ -4,9 +4,12 @@
 unsafe = true
 
 [module]
-[[module.imports]]
-path = "github.com/digitalcraftsman/hugo-sitemap"
+  [[module.imports]]
+    path = "github.com/digitalcraftsman/hugo-sitemap"
 
+
+[params]
+  sitemap = true
 
 [outputs]
 home = ["HTML", "RSS", "SITEMAP"]
