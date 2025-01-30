@@ -9,13 +9,6 @@ else if .IsPage }} {{ $title = printf "%s | %s" .Title $siteName }} {{- else if
 <!-- Ensure the correct BaseURL is used -->
 {{- if strings.Contains .Site.BaseURL "localhost" }} {{ $canonical = replace
 .Permalink "http://localhost:1313" "https://blog.000xs.xyz" }} {{- end }}
-
-<!-- Image URL Correction for Production -->
-{{- $image := .Params.image | default "default-image.jpg" }} {{- if
-strings.Contains .Site.BaseURL "localhost" }} {{ $image = printf
-"https://blog.000xs.xyz/%s" $image }} {{- else }} {{ $image = $image | absURL }}
-{{- end }}
-
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ $title }}</title>
@@ -30,6 +23,8 @@ strings.Contains .Site.BaseURL "localhost" }} {{ $image = printf
   property="og:type"
   content="{{ if .IsHome }}website{{ else }}article{{ end }}"
 />
+
+<!-- Dynamically set the Open Graph image -->
 <meta property="og:image" content="{{ .Params.img | relURL }}" />
 
 <!-- Twitter Card -->
@@ -37,6 +32,12 @@ strings.Contains .Site.BaseURL "localhost" }} {{ $image = printf
 <meta name="twitter:title" content="{{ $title }}" />
 <meta name="twitter:description" content="{{ $description }}" />
 <meta name="twitter:image" content="{{ .Params.img | relURL }}" />
+
+<!-- Favicon and Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/fav-180.jpg" |
+relURL }}" /> <link rel="icon" type="image/png" sizes="32x32" href="{{
+"/images/fav-32.jpg" | relURL }}" /> <link rel="icon" type="image/png"
+sizes="16x16" href="{{ "/images/fav-16.jpg" | relURL }}" />
 
 <!-- Schema Markup -->
 <script type="application/ld+json">
@@ -52,7 +53,4 @@ strings.Contains .Site.BaseURL "localhost" }} {{ $image = printf
     }
   }
 </script>
-<link rel="apple-touch-icon" sizes="180x180" href="/fav-180.jpg" />
-<link rel="icon" type="image/png" sizes="32x32" href="/fav-32.jpg" />
-<link rel="icon" type="image/png" sizes="16x16" href="/fav-16.jpg" />
 {{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
