@@ -1,7 +1,7 @@
 {{- $title := .Title }} {{- $description := .Params.description | default
 .Summary | default "A great website powered by Hugo" }} {{- $canonical :=
 .Permalink }} {{- $siteName := .Site.Title }} {{- if .IsHome }} {{ $title =
-printf "%s - %s" $siteName "Welcome" }} {{ $canonical = .Site.BaseURL }} {{-
+printf "%s - %s" $siteName "Welcome" }} {{ $canonical = "https://blog.000xs.xyz/" }} {{-
 else if .IsPage }} {{ $title = printf "%s | %s" .Title $siteName }} {{- else if
 .IsSection }} {{ $title = printf "Posts in %s | %s" .Title $siteName }} {{- end
 }}
