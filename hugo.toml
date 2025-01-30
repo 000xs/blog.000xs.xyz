@@ -4,6 +4,9 @@ title = '000xs Blog'
 
 theme = "000x"
 
+[outputs]
+  home = ["HTML", "RSS", "SITEMAP"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

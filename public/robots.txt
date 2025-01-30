@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Allow: /*
+Sitemap: https://blog.000xs.xyz/sitemap.xml
