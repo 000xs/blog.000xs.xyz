@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
+    <loc>http://localhost:1313/tags/beginer-guide/</loc>
+    <lastmod>2024-11-12T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/code/</loc>
+    <lastmod>2024-11-12T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-12T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech/</loc>
+    <lastmod>2024-11-12T08:30:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/the-beginners-guide-to-choosing-your-first-programming-language/the-beginners-guide-to-choosing-your-first-programming-language/</loc>
+    <lastmod>2024-11-12T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
