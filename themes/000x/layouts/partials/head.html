@@ -26,6 +26,7 @@ else if .IsPage }} {{ $title = printf "%s | %s" .Title $siteName }} {{- else if
 
 <!-- Dynamically set the Open Graph image -->
 <meta property="og:image" content="{{ .Params.img | relURL }}" />
+<meta property="og:site_name" content="Blog 000x">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
